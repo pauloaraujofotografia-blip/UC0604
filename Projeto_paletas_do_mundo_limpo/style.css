@@ -1,0 +1,352 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GLOBAL */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* CABEÇALHO */
+header {
+    background: #1A4C8B;
+    color: white;
+    padding: 35px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    margin-bottom: 25px;
+}
+
+/* NAVEGAÇÃO */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+nav a.active {
+    text-decoration: underline;
+}
+
+/* HERO */
+.hero {
+    background: url("img/Azulejos1.png") repeat;
+    background-size: 500px;
+    padding: 120px 20px;
+    /* Alinhamento central do overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-overlay {
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 70px 60px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.hero-overlay p {
+    text-align: justify;
+    text-indent: 20px;
+}
+
+/* PALETA DE CORES */
+.palette {
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.color-card {
+    width: 180px;
+    height: 180px;
+    border-radius: 12px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 10px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.color-card.light-text {
+    color: #333;
+}
+
+/* GALERIA DE IMAGENS */
+.images {
+    padding: 40px 20px;
+    margin-bottom: 60px;
+}
+
+.images h3 {
+    font-size: 1.9rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #1A4C8B;
+    text-align: center;
+    font-family: "Cormorant Garamond", serif;
+}
+
+.img-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.img-grid img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.img-grid img:hover {
+    transform: scale(1.4);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
+}
+
+/* RODAPÉ */
+footer {
+    background: #1A4C8B;
+    color: white;
+    padding: 15px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ESPECÍFICO JAPÃO */
+.hero.hero-japao {
+    background: url("img/pattern.jpg") no-repeat center center;
+    background-size: cover;
+    padding: 45px 60px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+    .palette {
+        flex-direction: column;
+        /* Ajuste para telemóveis */
+        align-items: center;
+    }
+
+    .color-card {
+        width: 140px;
+        height: 140px;
+    }
+
+    .img-grid img {
+        width: 90%;
+        height: auto;
+    }
+}
+
+/* ESTILOS ESPECÍFICOS JAPÃO */
+.header-japao {
+    background-color: #C72C3B !important;
+}
+
+.hero-japao .hero-overlay {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    width: 580px;
+    height: 580px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.palette-japao {
+    background-color: #F2E9D8;
+    margin-top: 0;
+}
+
+.footer-japao {
+    background-color: #1A1A1A !important;
+}
+
+/* ESTILOS ESPECÍFICOS MARROCOS */
+.body-marrocos {
+    background-color: #F7E7D3;
+}
+
+.header-marrocos {
+    background-color: #B66A3A !important;
+}
+
+.hero-marrocos {
+    background: url('img/marrocos.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 160px 60px;
+}
+
+.hero-marrocos .hero-overlay {
+    background: rgba(232, 201, 161, 0.90);
+}
+
+.palette-marrocos {
+    background-color: transparent;
+}
+
+.images-marrocos {
+    background-color: #E8C9A1;
+}
+
+.footer-marrocos {
+    background-color: #8A5A3B !important;
+}
+
+/* ESTILOS ESPECÍFICOS NOIR */
+.body-noir {
+    background-color: #0D0D0D;
+    color: #E5E5E5;
+}
+
+.header-noir {
+    background-color: #131212 !important;
+}
+
+.hero-noir {
+    background: url('img/noir.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.hero-noir .hero-overlay {
+    background: rgba(20, 20, 20, 0.85);
+    border: 1px solid #333;
+}
+
+.images-noir {
+    background-color: #2B2B2B;
+}
+
+.footer-noir {
+    background-color: #0D0D0D !important;
+    border-top: 1px solid #333;
+}
+
+/* ESTILOS ESPECÍFICOS CONTACTO */
+
+.hero-contacto {
+    background: url('img/formulario.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 120px 20px;
+}
+
+.hero-contacto .hero-overlay {
+    background: rgba(20, 20, 20, 0.85);
+    /* Overlay escuro para garantir leitura do texto */
+    border: 1px solid #333;
+}
+
+/* 2. Contentor do formulário usando Flexbox para centralização */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    background-color: #111;
+    /* Fundo ligeiramente diferente do body */
+}
+
+/* 3. Estilo do Formulário (limpo do HTML) */
+.contact-form {
+    background: #1A1A1A;
+    padding: 40px;
+    border-radius: 12px;
+    width: 500px;
+    max-width: 100%;
+    /* Adaptável a ecrãs pequenos */
+    color: #E5E5E5;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    /* REFORÇO FLEXBOX INTRA-FORMULÁRIO */
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    background: #2B2B2B;
+    color: white;
+    font-family: inherit;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #A45F3D;
+    /* Destaque no focus */
+}
+
+/* 4. Estilo do Botão */
+.btn-submit {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: #A45F3D;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+.btn-submit:hover {
+    background: #C62828;
+}
+
+/* RESPONSIVO CONTACTO */
+@media (max-width: 600px) {
+    .contact-form {
+        padding: 20px;
+    }
+}

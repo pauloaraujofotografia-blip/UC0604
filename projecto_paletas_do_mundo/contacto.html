@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entra em contacto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color:#0D0D0D;">
+
+    <!-- HEADER (mesma estrutura das outras páginas) -->
+    <header style="background-color:#1A1A1A;">
+        <h1>Entra em contacto</h1>
+        <nav>
+            <a href="index.html">Portugal</a>
+            <a href="japao.html">Japão</a>
+            <a href="marrocos.html">Marrocos</a>
+            <a href="noir.html">Noir</a>
+            <a href="contacto.html" class="active">Sugestões</a>
+        </nav>
+    </header>
+
+    <!-- HERO (dark mode suave) -->
+    <section class="hero" style="background:#111;">
+        <div class="hero-overlay" style="background:rgba(20,20,20,0.9);">
+            <h2 style="color:#E5E5E5;">Fala connosco</h2>
+            <p style="color:#CCCCCC;">
+                Tens uma ideia, um projeto ou apenas queres trocar impressões?
+                Envia uma mensagem — responderemos logo que possível.
+            </p>
+        </div>
+    </section>
+
+    <!-- FORMULÁRIO -->
+    <section class="palette" style="margin-top:40px;">
+
+        <form style="
+            background:#1A1A1A;
+            padding:40px;
+            border-radius:12px;
+            width:500px;
+            max-width:90%;
+            margin:auto;
+            color:#E5E5E5;
+            box-shadow:0 6px 15px rgba(0,0,0,0.4);
+        ">
+
+            <label for="nome" style="font-weight:bold;">Nome</label>
+            <input type="text" id="nome" name="nome" required
+                style="width:100%; padding:12px; margin:10px 0 20px; border-radius:8px; border:none; background:#2B2B2B; color:white;">
+
+            <label for="email" style="font-weight:bold;">Email</label>
+            <input type="email" id="email" name="email" required
+                style="width:100%; padding:12px; margin:10px 0 20px; border-radius:8px; border:none; background:#2B2B2B; color:white;">
+
+            <label for="mensagem" style="font-weight:bold;">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required
+                style="width:100%; padding:12px; margin:10px 0 20px; border-radius:8px; border:none; background:#2B2B2B; color:white;"></textarea>
+
+            <button type="submit" style="
+                    width:100%;
+                    padding:14px;
+                    border:none;
+                    border-radius:8px;
+                    background:#A45F3D;
+                    color:white;
+                    font-weight:bold;
+                    cursor:pointer;
+                    font-size:1rem;
+                    transition:0.3s;
+                " onmouseover="this.style.background='#C62828'" onmouseout="this.style.background='#A45F3D'">
+                Enviar mensagem
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer style="background-color:#1A1A1A;">
+        © 2026 Paulo Araújo
+    </footer>
+
+</body>
+
+</html>
